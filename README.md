@@ -1,3 +1,1 @@
 # Gleasa
-Xyinya
-casc
