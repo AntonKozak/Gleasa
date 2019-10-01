@@ -4,14 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Gleasa</title>
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <title>Glesa</title>
+    
 </head>
 <body>
+
     <h1 align="center"> <img src="C:\Users\Kosty\Pictures\Logo.jpg"> </h1> 
     <hr>
-    <h3>Choose 
-     <br>GreenHouse </h3>
-     <h3>M<sup>2</sup></h3>
 
+    <div class="flex-container">
+<div class="test1"> <button class="button" onclick="myFunction()">+</button> </div>
+<div class="test1"> <p>Test</p> </div>
+<div class="test1"> <p>Test</p> </div>
+<div class="test1"> <p>Test</p> </div>
+<div class="test1"> <p>Test</p> </div>
+<div class="test1"> <p>Test</p> </div>
+<div class="test1"> <p>Test</p> </div>
+<div class="test1"> <p>Test</p> </div>
+<div class="test1"> <p>Test</p> </div>
+<div class="test1"> <button class="button" onclick="">Done</button> </div>
+</div><br>
+<div class="flex-container">
+    <div class="test1"> <p>1</p> </div>
+    <div class="test1"> <p>Zig Zag</p> </div>
+    <div class="test1"> <p>House 1</p> </div>
+    <div class="test1"> <p>Pel. Zonal</p> </div>
+    <div class="test1"> <p>Tables 8</p> </div>
+    <div class="test1"> <p>On table 458 st</p> </div>
+    <div class="test1"> <p>In line 14cm</p> </div>
+    <div class="test1"> <p>21 on 1 m<sup><small>2</small></sup></p> </div>
+    <div class="test1"> <p>Total 3664 st</p> </div>
+    <div class="test1"> <p>Share or Print</p> </div>
+    </div><br>
+<script>
+    function myFunction() {
+      var elmnt = document.getElementsByTagName("DIV")[0];
+      var cln = elmnt.cloneNode(true);
+      document.body.appendChild(cln);
+    }
+    </script>
 </body>
 </html> 
