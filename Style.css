@@ -1,21 +1,38 @@
 .test1{
-    border: 1px solid white;
-    height: 50px;
     width: 100px;
+    text-align: center;  
+}
+
+.test2{
+    border: 1px solid rgb(255, 255, 255);
     text-align: center;
-    margin: 0px 5px 0px 0px;
+    margin: 0px 10px 0px 0px;
+}
+.flex-container-test {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgba(39, 39, 41, 0.322);
 }
 .flex-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    border: 1px solid rgb(255, 255, 255);
 }
 .button{
-    border: 0px solid rgb(54, 54, 133);
+    border: 0px solid rgb(12, 12, 102);
     text-align: center;
-    margin: 1px 0px 0px 0px;
     color: rgb(54, 54, 133);
-    font-size: 36px;
+    font-size: 32px;
     background-color: white;
 }
+input {
+    width: 75px;
+    height: 14px;
+  }
+select {text-align-last:center; }
+

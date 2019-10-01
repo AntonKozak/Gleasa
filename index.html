@@ -14,18 +14,57 @@
     <hr>
 
     <div class="flex-container">
-<div class="test1"> <button class="button" onclick="myFunction()">+</button> </div>
-<div class="test1"> <p>Test</p> </div>
-<div class="test1"> <p>Test</p> </div>
-<div class="test1"> <p>Test</p> </div>
-<div class="test1"> <p>Test</p> </div>
-<div class="test1"> <p>Test</p> </div>
-<div class="test1"> <p>Test</p> </div>
-<div class="test1"> <p>Test</p> </div>
-<div class="test1"> <p>Test</p> </div>
-<div class="test1"> <button class="button" onclick="">Done</button> </div>
+
+<div class="test2 "> 
+    <button class="button" onclick="myFunction()">+</button> 
+</div>
+    <div class="test2">
+    <label for="position">Choose position</label> <br> 
+    <select id="position">
+     <option id="zigzag" value="zigzag">Zig-zag</option>
+     <option id="forban" value="forban">Forban</option>
+    </select>
+    </div>
+    <div class="test2"> 
+    <label for="greenhouse">Choose house</label> <br>
+    <select id="greenhouseNumer">
+     <option id="h1" value="house1">House1</option>
+     <option id="h2" value="house2">House2</option>
+     <option id="h3" value="house3">House3</option>
+     <option id="h4" value="house4">House4</option>
+     <option id="h5" value="house5">House5</option>
+    </select>
+    </div>
+    <div class="test2">
+    <label for="plantName">Choose plant</label> <br>
+    <select id="plantName">
+     <option id="pelZonale" value="pel.zonale">Pel.zonale</option>
+     <option id="cascade" value="cascade">Cascade</option>
+     <option id="peltatum" value="peltatum">Peltatum</option>
+     <option id="dahlia" value="dahlia">Dahlia</option>
+     <option id="dichondra" value="dichondra">Dichondra</option>
+    </select> 
+    </div>
+<div class="test2"> 
+    <label for="table">Tables amount</label><br>
+    <input type="number" name="table" id="tabel" value="tabel"> </div>
+<div class="test2">
+<label for="plants">Plants amount</label><br>
+<input type="number" name="plants" id="plants" value="plants">
+</div>
+<div class="test2">
+<label for="plantsInline">Plants in line</label><br>
+<input type="number" name="plantsInline" id="plantsInline" value="plantsInline"> 
+</div>
+<div class="test2">
+<label for="plantsPerm">Plants per M</label><br>
+ <input type="number" name="plantsPerm" id="plantsPerm" value="plantsPerm"> 
+</div>
+<div class="test2">
+<button class="button" onclick="">Done</button>
+ </div>
 </div><br>
-<div class="flex-container">
+<div class="flex-container-test">
     <div class="test1"> <p>1</p> </div>
     <div class="test1"> <p>Zig Zag</p> </div>
     <div class="test1"> <p>House 1</p> </div>
@@ -36,7 +75,8 @@
     <div class="test1"> <p>21 on 1 m<sup><small>2</small></sup></p> </div>
     <div class="test1"> <p>Total 3664 st</p> </div>
     <div class="test1"> <p>Share or Print</p> </div>
-    </div><br>
+    
+</div><br>
 <script>
     function myFunction() {
       var elmnt = document.getElementsByTagName("DIV")[0];
