@@ -1,4 +1,4 @@
-
+* {box-sizing: border-box}
                                        /* Flex container for result from pots area (after delete) */
 .flex-container-test {
     display: flex;
@@ -36,7 +36,7 @@
                                         /* Select and input for pots area */
 input { width: 75px; height: 14px; }
 select {text-align-last:center; }
-                                                /* start : Tab for head page */
+                                                /* Start : Tab for head page */
 /* Style the tab */
 .tab {
     overflow: hidden;
@@ -74,3 +74,49 @@ select {text-align-last:center; }
     border-top: none;
   }
                                                  /* finish : Tab for head page */
+
+                                                 /* Start : Tab for settings page */ 
+/* Style the tab */
+.tab1 {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 10%;
+  height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab1 button {
+  box-sizing: border-box;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab1 button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab1 button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabconten {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 300px;
+}
+                                                      /* finish : Tab for settings page */

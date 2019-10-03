@@ -17,10 +17,9 @@
         <button class="tablinks" onclick="openCity(event, 'Boxes')">Boxes</button>
         <button class="tablinks" onclick="openCity(event, 'Settings')">Settings</button>
       </div>
-      
+                                                                                             <!-- Pots area -->        
     <div id="Pots" class="tabcontent">
          <div class="flex-container">
-                                                                         <!-- Pots area  -->
             <div class="test1 "> 
                 <button class="button"  onclick="myFunction()">Add</button> 
             </div>
@@ -93,34 +92,74 @@
                 }
              </script>
          </div>
-                                                                                             <!-- Boxes area -->  
+                                                                                              <!-- Boxes area -->   
       <div id="Boxes" class="tabcontent">
         <h3>Not today</h3>
       </div>
                                                                                              <!-- Settings area -->
       <div id="Settings" class="tabcontent">
-        <h3>Not today either as boxes</h3>
+        <div>
+            <div class="tab1">
+                <button class="tablink" onclick="openCit(event, 'Housesettings')" id="defaultOpen1">Add house</button>
+                <button class="tablink" onclick="openCit(event, 'Potsettings')">Add pot</button>
+                <button class="tablink" onclick="openCit(event, 'Boxsettings')">Add box</button>
+              </div>
+              
+              <div id="Housesettings" class="tabconten">
+                <h3>Add house</h3>
+                
+              </div>
+              
+              <div id="Potsettings" class="tabconten">
+                <h3>Add pot</h3>
+                
+              </div>
+              
+              <div id="Boxsettings" class="tabconten">
+                <h3>Add box</h3>
+              
+              </div>
+             </div> 
       </div>
-                                                                                             <!-- Script which changes tabs -->
-      <script>
-        function openCity(evt, cityName) {
-          var i, tabcontent, tablinks;
-          tabcontent = document.getElementsByClassName("tabcontent");
-          for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-          }
-          tablinks = document.getElementsByClassName("tablinks");
-          for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-          }
-          document.getElementById(cityName).style.display = "block";
-          evt.currentTarget.className += " active";
-        }
-        
-        // Get the element with id="defaultOpen" and click on it
-        document.getElementById("defaultOpen").click();
-      </script>
+                                                                                             <!-- Script which changes tabs settings page -->   
+  <script>
+              function openCit(evt, cityNam) {
+                var i, tabconten, tablink;
+                tabconten = document.getElementsByClassName("tabconten");
+                for (i = 0; i < tabconten.length; i++) {
+                  tabconten[i].style.display = "none";
+                }
+                tablink = document.getElementsByClassName("tablink");
+                for (i = 0; i < tablink.length; i++) {
+                  tablink[i].className = tablink[i].className.replace(" active", "");
+                }
+                document.getElementById(cityNam).style.display = "block";
+                evt.currentTarget.className += " active";
+              }
+              // Get the element with id="defaultOpen" and click on it
+              document.getElementById("defaultOpen1").click();
+  </script>
+       
 
-    
+                                                                                               <!-- Script which changes tabs head page -->
+<script>
+  function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+tabcontent = document.getElementsByClassName("tabcontent");
+for (i = 0; i < tabcontent.length; i++) {
+ tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+   }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+   }
+                                                                                                      
+                                                    // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+  </script>
+                                                                                              
 </body>
 </html> 
