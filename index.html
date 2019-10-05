@@ -97,8 +97,8 @@
                 <div class="test2"> <p>On table 458 st</p> </div>
                 <div class="test2"> <p>In line 14cm</p> </div>
                 <div class="test2"> <p>21 on 1 M<sup>2</sup><sup></sup></p> </div>
-                <div class="test2"> <p>Total 3664 st</p> </div>
-                <div class="test2"> <p>Share or Print</p> </div>  
+                <div class="test2"> <p>Boxes per 5 lines 8<br> Boxes per 4 lines 6</p></div>
+                <div class="test2"> <p>Total 3664 st</p> </div>  
             </div><br>
                                                                                            <!-- Script which add extra pots area -->
             <script>
@@ -111,7 +111,57 @@
          </div>
                                                                                               <!-- Boxes area -->   
       <div id="Boxes" class="tabcontent">
-        <h3>Not today</h3>
+        <div class="flex-container">
+          <div class="test2">
+              <label>Choose table</label><br>
+            <select style="border: 1px solid black; width: 80px; height: 22px;">
+              <option id="h1" value="house1">House1</option>
+              <option id="h2" value="house2">House2</option>
+              <option id="h3" value="house3">House3</option>
+              <option id="h4" value="house4">House4</option>
+              <option id="h5" value="house5">House5</option>
+            </select>
+          </div>
+          <div class="test2">
+            <label>Choose box</label><br>
+            <select style="border: 1px solid black; width: 80px; height: 22px;">
+              <option id="box14" value="box14">Boxes14</option>
+              <option id="box12" value="box12">Boxes12</option>
+            </select>
+          </div>
+          <div class="test2">
+              <label for="plantName">Choose plant</label> <br>
+              <select id="plantName">
+               <option id="pelZonale" value="pel.zonale">Pel.zonale</option>
+               <option id="cascade" value="cascade">Cascade</option>
+               <option id="peltatum" value="peltatum">Peltatum</option>
+               <option id="dahlia" value="dahlia">Dahlia</option>
+               <option id="dichondra" value="dichondra">Dichondra</option>
+              </select> 
+             </div>
+          <div class="test2">
+            <label for="tableBox">Tables amount</label><br>
+            <input style="border: 1px solid black; width: 80px; height: 8px;" type="number" name="tableBox" id="tabelBox" value="tabelBox">
+          </div>
+          <div class="test2">
+              <label for="boxes">Boxes amount</label><br>
+              <input style="border: 1px solid black; width: 80px; height: 8px;" type="number" name="boxes" id="boxes" value="boxes">
+            </div>
+            <div class="test2">
+                <label for="pots">Pots amount</label><br>
+                <input style="border: 1px solid black; width: 80px; height: 8px;" type="number" name="pots" id="pots" value="pots">
+              </div>
+        </div><br>
+        <div class="flex-container">
+              <div class="test2"> <p>1</p> </div>
+              <div class="test2"> <p>House 1</p> </div>
+              <div class="test2"> <p>Pel. Zonal</p> </div>
+              <div class="test2"> <p>Tables 8</p> </div>
+              <div class="test2"> <p>On table boxes 68 </p> </div>
+              <div class="test2"> <p>Total boxes 864 </p> </div>
+              <div class="test2"> <p>Total plants 5664 st</p> </div>
+              <div class="test2"> <p>Share or Print</p> </div>  
+          </div>
       </div>
                                                                                              <!-- Settings area -->
       <div id="Settings" class="tabcontent">
@@ -123,20 +173,71 @@
               </div>
               
               <div id="Housesettings" class="tabconten">
-                <h3>Add house</h3>
-                
+                  <div class="flex-container-settings">
+                      <div class="test2"> 
+                        <label for="nameHouse">Add house name</label><br>
+                        <input class="input" type="number" name="nameHouse" id="nameHouse" value="nameHouse"> 
+                      </div>
+                      <div class="test2"> 
+                          <label for="amountOftables">Amount of tables</label><br>
+                          <input class="input" type="number" name="amountOftables" id="amountOftables" value="amountOftables"> 
+                        </div>
+                          <div class="test2"> 
+                              <label for="lineAmount">Add line amount</label><br>
+                              <input class="input" type="number" name="lineAmount" id="lineAmount" value="lineAmount"> 
+                          </div>
+                            <div class="test2"> 
+                                <label for="tableWidth">Table width</label><br>
+                                <input class="input" type="number" name="tableWidth" id="tableWidth" value="tableWidth"> 
+                              </div>
+                              <div class="test2"> 
+                                  <label for="tableLength">Table length</label><br>
+                                  <input class="input" type="number" name="tableLength" id="tableLength" value="tableLength"> 
+                              </div>
+                                <div class="test1">
+                                    <button class="button" onclick="">Save</button>
+                               </div>   
+                    </div>          
               </div>
-              
               <div id="Potsettings" class="tabconten">
-                <h3>Add pot</h3>
-                
+                  <div class="flex-container-settings">
+                      <div class="test2"> 
+                        <label for="namePot">Add pot name</label><br>
+                        <input class="input" type="number" name="namePot" id="namePot" value="namePot"> 
+                      </div>
+                      <div class="test2"> 
+                          <label for="potCaliber">Pot caliber</label><br>
+                          <input class="input" type="number" name="potCaliber" id="potCaliber" value="potCaliber"> 
+                        </div>
+                            <div class="test1">
+                                <button class="button" onclick="">Save</button>
+                           </div>
+                    </div>          
               </div>
-              
               <div id="Boxsettings" class="tabconten">
-                <h3>Add box</h3>
-              
+              <div class="flex-container-settings">
+                <div class="test2"> 
+                  <label for="nameBox">Add box name</label><br>
+                  <input class="input" type="number" name="nameBox" id="nameBox" value="nameBox"> 
+                </div>
+                <div class="test2"> 
+                    <label for="amountOfpots">Amount of pots</label><br>
+                    <input class="input" type="number" name="amountOfpots" id="amountOfpots" value="amountOfpots"> 
+                  </div>
+                  <div class="test2"> 
+                      <label for="boxWidth">Box width</label><br>
+                      <input class="input" type="number" name="boxWidth" id="boxWidth" value="boxWidth"> 
+                    </div>
+                    <div class="test2"> 
+                        <label for="boxLength">Box length</label><br>
+                        <input class="input" type="number" name="boxLength" id="boxLength" value="boxLength"> 
+                      </div>
+                      <div class="test1">
+                          <button class="button" onclick="">Save</button>
+                     </div>
+              </div>          
               </div>
-             </div> 
+            </div> 
       </div>
                                                                                              <!-- Script which changes tabs settings page -->   
   <script>
